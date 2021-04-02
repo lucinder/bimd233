@@ -1,10 +1,16 @@
 # This is a heading
 ## This is a smaller heading!
 ### And this is a reeeeally small heading.
+
 Welcome one and all to the setup page.
+
 [This link](luchinder.github.io/bimd233) should take you back to the homepage.
+
 **This text should be bold**, *this text should be italicized*, and ***this text should be both!***
+
 ~~But this text should be neither...~~
+
+
 I have a bit of experience using markdown for homebrewery pages. For example...
 
 This is a Table!
