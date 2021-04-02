@@ -14,6 +14,7 @@ Welcome one and all to the setup page.
 I have a bit of experience using markdown for homebrewery pages. For example...
 
 This is a Table!
+
 Result (d4) | Effect
 ------------ | -------------
 1 | You drop to 0HP instantly.
