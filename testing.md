@@ -22,4 +22,16 @@ Result (d4) | Effect
 3 | You cast [Fireball](http://dnd5e.wikidot.com/spell:fireball) centered on self.
 4 | You ascend...
 
+1. This
+2. Is
+3. An
+4. Ordered
+5. List
+
+- This
+- Is
+- An
+- Unordered 
+- List
+
 More to be added as I learn more things!
