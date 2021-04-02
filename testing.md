@@ -4,7 +4,7 @@
 
 Welcome one and all to the setup page.
 
-[This link](luchinder.github.io/bimd233) should take you back to the homepage.
+[This link](http://luchinder.github.io/bimd233) should take you back to the homepage.
 
 **This text should be bold**, *this text should be italicized*, and ***this text should be both!***
 
