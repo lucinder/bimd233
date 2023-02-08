@@ -36,8 +36,8 @@
       margin-top:-10px;
     }
     .collapsible {
-      background-color: #eee;
-      color: #444;
+      background-color: slategray;
+      color: lightgray;
       cursor: pointer;
       padding: 18px;
       width: 100%;
@@ -47,13 +47,14 @@
       font-size: 15px;
     }
     .active, .collapsible:hover {
-      background-color: #ccc;
+      background-color: darkslategray;
     }
     .posts {
       padding: 0 18px;
-      display: none;
+      background-color: darkslategray;
+      max-height: 0;
       overflow: hidden;
-      background-color: #f1f1f1;
+      transition: max-height 0.2s ease-out;
     }
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -71,13 +72,13 @@
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
         } else {
-          content.style.display = "block";
+          content.style.maxHeight = content.scrollHeight + "px";
         }
       });
-    } 
+    }
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
