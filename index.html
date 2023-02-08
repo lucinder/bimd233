@@ -35,6 +35,26 @@
       color:#696969;
       margin-top:-10px;
     }
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+    .posts {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="/assets/js/respond.js"></script>
@@ -44,6 +64,21 @@
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="/bcore120C/assets/css/ie.css">
     <![endif]-->
+  <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    } 
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
@@ -73,8 +108,7 @@
         <p>Most importantly, they hope you have a wonderful day!</p>
         </span>
       </div>
-      <label for="my-stuff">Take a look at what I've worked on!</label>
-      <select name="my-stuff" id="my-stuff">
+      <button type="button" class="collapsible">Take a look at what I've worked on!</button>
       <div class="posts">
         <tbody>
           <tr>
