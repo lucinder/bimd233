@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="/bcore120C/assets/css/style.css?v=29b1953361c1b29caec104bbd9019e8425570fdd">
   <style>
     body{
-      background-image: url("crownjewels.png");
+      background-image: url("pagebg.png");
       background-size: 120% 120%;
     }
     .credits{
@@ -34,20 +34,6 @@
       font-weight:normal;
       color:#696969;
       margin-top:-10px;
-    }
-    .collapsible {
-      background-color: slategray;
-      color: lightgray;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-    }
-    .active, .collapsible:hover {
-      background-color: darkslategray;
     }
     .posts {
       padding: 0 18px;
@@ -68,21 +54,6 @@
 </head>
 
 <body>
-  <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
   <div id="header">
     <nav>
       <li class="fork" style="float:right; margin-left: 10px"><a href="https://github.com/lucinder/lucinder.github.io">View On GitHub</a></li>
@@ -108,7 +79,7 @@
         <p>Most importantly, they hope you have a wonderful day!</p>
         </span>
       </div>
-      <button type="button" class="collapsible">Take a look at what I've worked on!</button>
+      <h2>Take a look at what I've worked on!</h2>
       <div class="posts">
         <tbody>
           <tr>
@@ -137,7 +108,7 @@
       </div>
       </select>
       <div class="other stuff">
-        <span style="align:left"><h4>What am I listening to right now?</h4>
+        <span style="align:left"><h3>What am I listening to right now?</h3>
           <ol>
             <li><span style="color:light-gray"><a href="https://www.youtube.com/watch?v=uKbRXeJ9lv4"><strong>The Good Child and the Fox Spirit</strong> by Kikuo</a></span></li>
             <li><span style="color:light-gray"><a href="https://www.youtube.com/watch?v=zKaoDdNZhJE"><strong>GOD RACE</strong> by METAROOM</a></span></li>
@@ -154,7 +125,7 @@
       </div>
       <div class="credits">
         <span class="credits left" style="content-align:left">Project maintained by <strong>lucinder</strong></span>
-        <span class="credits right" style="content-align:right">Background: <em>The Crown Jewels</em>, 1887 by Blaise Alexandre Desgoffe</span>
+        <span class="credits right" style="content-align:right">Background: <em>The Course of Empire: Destruction</em>, 1836 by Thomas Cole</span>
       </div>
     </section>
   </div>
